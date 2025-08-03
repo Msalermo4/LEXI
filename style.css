@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background-color: #5a2d82;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header .subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+main h2 {
+    color: #5a2d82;
+    margin-top: 0;
+}
+
+#search-form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#search-form input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #5a2d82;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.attorney-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.attorney-list li {
+    background-color: white;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.attorney-list li:hover {
+    background-color: #f0f0f8;
+}
+
+.bar-number {
+    margin-left: 0.5rem;
+    color: #666;
+}
+
+.status {
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.status.suspended { background-color: #d9534f; }
+.status.reinstated { background-color: #5cb85c; }
+.status.censured { background-color: #f0ad4e; }
+.status.active { background-color: #0275d8; }
+
+.hidden {
+    display: none;
+}
+
+#details-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+#details-section th,
+#details-section td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#details-section th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.citation {
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: 0.25rem;
+}
+
+footer {
+    background-color: #eee;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #666;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEXI – Registro disciplinario de abogados y abogadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LEXI</h1>
+            <p class="subtitle">Registro disciplinario de abogados y abogadas basado en decisiones oficiales del Tribunal Supremo de Puerto Rico</p>
+        </div>
+    </header>
+    <main class="container">
+        <section id="search-section">
+            <h2>Buscar abogados y abogadas sancionados/as</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Nombre o número de colegiación" autocomplete="off">
+                <button type="submit">Buscar</button>
+            </form>
+            <p id="results-info"></p>
+            <ul id="results-list" class="attorney-list"></ul>
+        </section>
+        <section id="details-section" class="hidden">
+            <a href="#" id="back-link">← Volver a la búsqueda</a>
+            <div id="details-container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            Esta aplicación utiliza datos públicos de las decisiones disciplinarias del Tribunal Supremo de Puerto Rico. La información aquí presentada no sustituye las certificaciones oficiales del Tribunal ni el Registro Único de Abogados y Abogadas (RUA).
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
